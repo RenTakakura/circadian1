@@ -47,11 +47,11 @@ double g2(double k,double d, double t0){
 int main(void){
   
   int i,j; 
-  double t0,t1,T0,T1,k = 4.00,d= (1.50)*2*M_PI;
+  double t0,t1,T0,T1,k = 2.00,d= M_PI;
   
   //open file
   FILE *fp;
-  fp = fopen("map2.txt","w");
+  fp = fopen("mapT12K4.txt","w");
 
   //loop for start 
   for(j=-500; j <=500;j++){
