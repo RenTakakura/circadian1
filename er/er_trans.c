@@ -19,16 +19,16 @@ int main(void){
 
   //open file  
   FILE *fp;
-  fp = fopen("36er_0.5cri_trans.dat","w");
+  fp = fopen("16er_0.5cri_trans.dat","w");
 
   //def variables
   //xa =  M_PI*(2.0/3.0);
-  va =  2.0*M_PI*(24.0/36.0);
+  va =  2.0*M_PI*(16.0/24.0);
   xex = 0.0;
 
-for(a=0; a<10; a++){
+for(a=0; a<100; a++){
 
-    xa = M_PI*2*a/10.0;
+    xa = M_PI*2*a/100.0;
 
   //time development
   for(step=0; step<maxstep; step++){
