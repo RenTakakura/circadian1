@@ -4,13 +4,14 @@
 #include <stdio.h>
 #include <math.h>
 
-
-int main(void){
-
-  //def function
+//def function
   double fxa(double l,double xa,double xex){
   return  -1.0*  l *sin(xa - xex);
   }
+
+int main(void){
+
+  
 
   //def variables  
   int k, i, j, step, maxstep =8000;
@@ -20,7 +21,7 @@ int main(void){
   p=0.50;
 
   //loop for FRP
-  for(i=1;i<=48;i++){
+  for(i=6;i<=6;i++){
 
     a= i*1.0/24.0;
 

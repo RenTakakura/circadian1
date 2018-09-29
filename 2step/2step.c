@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define k     -8.0
+#define k     -M_PI
 
 //def external force
 double fxa(double xa,double xex){
@@ -19,11 +19,11 @@ int main(void){
 
   //open file  
   FILE *fp;
-  fp = fopen("12sample_8.0.dat","w");
+  fp = fopen("16sample_pi.dat","w");
 
   //def variables
   xa =  M_PI*(2.0/3.0);
-  va =  2.0*M_PI*(12.0/24.0);
+  va =  2.0*M_PI*(32.0/24.0);
   xex = 0.0;
 
   //time development
@@ -54,7 +54,7 @@ int main(void){
     
     
     
-    fprintf(fp,"%lf %lf %lf %lf \n", step*dt,fmod(xex,2*M_PI),fmod(xa,2*M_PI),v/dt);
+    fprintf(fp,"%lf %lf %lf %lf \n", step*dt,sin(xex),sin(xa),v/dt);
     
   }
   
